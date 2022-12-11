@@ -1,6 +1,6 @@
 # Quilt Template Mod
 
-The official Quilt template mod. You can use it as a template for your own mods!
+Stereo528's unofficial Quilt template mod. You can use it as a template for your own mods! However, this is the basis for all of my mods going forward!
 
 ## Usage
 
@@ -21,8 +21,13 @@ In order to use this mod as a template:
     - If the dependencies on `gradle/libs.versions.toml` isn't up-to-date, feel free to update them! The [linked utility](https://lambdaurora.dev/tools/import_quilt.html) should help you in this easy and quick process.
 4. The mod is now ready to be worked on!
 
+##  Changes
+- LazyDFU & Sodium are dev environment only mods
+- MidnightLib is a dependency mod
+- MidnightLib config system is set up already!
+
 ## License
 
-This template on the QuiltMC GitHub is licensed under the [Creative Common Zero v1.0 license](./LICENSE-TEMPLATE.md).
+This template is licensed under the [BSD-3-Clause "New" or "Revised" License](./LICENSE.md).
 
-Mods created with this template are not automatically licensed under the CC0, and are not required to give any kind of credit back to QuiltMC for this template.
+Mods created with this template are not automatically licensed under the CC0, and are not required to give any kind of credit back to QuiltMC or Stereo528 for this template.
