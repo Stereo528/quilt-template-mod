@@ -1,7 +1,7 @@
 {
 	"schema_version": 1,
 	"quilt_loader": {
-		"group": "io.github.stereo528",
+		"group": "com.stereo528",
 		"id": "example",
 		"version": "${version}",
 		"metadata": {
@@ -11,6 +11,7 @@
 				"Stereo528": "Owner"
 			},
 			"contact": {
+				"homepage": "https://stereo528.com",
 				"issues": "https://github.com/Stereo528/quilt-template-mod/issues",
 				"sources": "https://github.com/Stereo528/quilt-template-mod"
 			},
@@ -18,9 +19,9 @@
 		},
 		"intermediate_mappings": "net.fabricmc:intermediary",
 		"entrypoints": {
-			"init": "io.github.stereo528.example.Example",
-			"client_init": "io.github.stereo528.example.ExampleClient",
-			"modmenu": "io.github.stereo528.example.Config.ModMenuIntegration"
+			"init": "com.stereo528.example.Example",
+			"client_init": "com.stereo528.example.ExampleClient",
+			"modmenu": "com.stereo528.example.Config.ModMenuIntegration"
 		},
 		"depends": [
 			{
