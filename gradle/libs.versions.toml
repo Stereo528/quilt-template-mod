@@ -1,12 +1,12 @@
 [versions]
 # The latest versions are available at https://lambdaurora.dev/tools/import_quilt.html
 minecraft = "1.20.1"
-quilt_loader = "0.19.1"
+quilt_loader = "0.20.0-beta.4"
 
-quilted_fabric_api = "7.0.2+0.83.0-1.20.1"
+quilted_fabric_api = "7.2.2+0.88.1-1.20.1" #awaiting 1.20.2 qsl before actually doing 1.20.2
 
-sodium_version = "mc1.20-0.4.10"
-mod_menu_version = "7.0.1"
+sodium_version = "mc1.20.1-0.5.3"
+mod_menu_version = "7.2.2"
 joml_version = "1.10.5"
 midnightlib_version = "1.4.1-quilt"
 
