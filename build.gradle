@@ -18,12 +18,17 @@ repositories {
 dependencies {
 	minecraft libs.minecraft
 
-	mappings loom.officialMojangMappings()
+	mappings loom.layered {
+		it.officialMojangMappings { nameSyntheticMembers = false }
+		it.mappings("org.quiltmc:quilt-mappings:${libs.versions.minecraft.get()}+build.3:intermediary-v2")
+	}
 	modImplementation libs.quilt.loader
 
-	modImplementation libs.quilted.fabric.api
+	//modImplementation libs.quilted.fabric.api // waiting on QSL 1.20.4
+	modImplementation libs.fabric.api.deprecated
+	modImplementation libs.fabric.api
 	modImplementation libs.bundles.dependencies
-	modLocalRuntime(libs.bundles.dev.mods) { exclude group: "net.fabricmc"; exclude group: "net.fabricmc.fabric-api"; exclude group: "net.fabricmc.loader" }
+	modLocalRuntime(libs.bundles.dev.mods) { exclude group: "net.fabricmc.loader" }
 }
 
 processResources {
@@ -102,7 +107,6 @@ String getVersion() {
 	if (build_id != null) {
 		return "${mod_version}+build.${build_id}"
 	}
-
 	if (grgit != null) {
 		def head = grgit.head()
 		def id = head.abbreviatedId

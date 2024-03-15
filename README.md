@@ -30,4 +30,4 @@ In order to use this mod as a template:
 
 This template is licensed under the [BSD-3-Clause "New" or "Revised" License](./LICENSE.md).
 
-Mods created with this template are not automatically licensed under the CC0, and are not required to give any kind of credit back to QuiltMC or Stereo528 for this template.
+Mods created with this template are not automatically licensed under the BSD-3-Clause License, and are not required to give any kind of credit back to QuiltMC or Stereo528 for this template.
